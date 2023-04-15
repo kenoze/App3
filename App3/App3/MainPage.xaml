@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.MainPage">
+    <StackLayout>
+        <Image Source="trcanje.png" WidthRequest="200"></Image>
+   
+    <Grid Padding="20">
+       
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+       
+        <Label x:Name="Labelnum1" Text="Distance run" Grid.Row="0" Grid.Column="0" FontSize="Medium" />
+        <Entry x:Name="num1" Placeholder="Enter num1:" Grid.Row="0" Grid.Column="1" />
+        <Label x:Name="Labelnum2" Text="Weight:" Grid.Row="1" Grid.Column="0"  FontSize="Medium"/>
+        <Entry x:Name="num2" Placeholder="Enter num:" Grid.Row="1" Grid.Column="1" />
+        <Label x:Name="Labelres" Text="Result is:" Grid.Row="2" Grid.Column="0" />
+        <Label x:Name="res" Grid.Row="2" Grid.Column="1" />
+            <Button x:Name="BtnAdd" Text="Show Calories Burned" Grid.Row="3" Grid.Column="0" Clicked="BtnAdd_Clicked" CornerRadius="20" BackgroundColor="Bisque" />
+
+        <Button x:Name="BtnClr" Text="Clear" Grid.Row="5" Grid.Column="1" Clicked="BtnClr_Clicked" CornerRadius="20" BackgroundColor="Bisque"/>
+    </Grid>
+    </StackLayout>
+</ContentPage>
